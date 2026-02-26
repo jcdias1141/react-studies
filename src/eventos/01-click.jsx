@@ -25,15 +25,9 @@ function EventosClick() {
 
   return (
     <>
-      <h2>Eventos: Click e Mouse</h2>
-      <p>Exemplos básicos de eventos onClick e onMouseLeave</p>
       <button onClick={cliqueiNoBotao}>Primeiro botão (onClick)</button>
       <button onMouseLeave={quandoSairBotao}>Segundo botão (onMouseLeave)</button>
-
-      
-      <button onClick={() => {
-        console.log("Clicou em mim");
-      }}> Botão teste </button>
+      <button onClick={() => console.log("Clicou em mim")}>Botão teste</button>
     </>
   );
 }
