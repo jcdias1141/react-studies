@@ -1,5 +1,6 @@
 import { StudyBlock } from "../components/StudyBlock";
 import { NavLink } from "../components/NavLink";
+import { Card } from "../components/Card";
 
 const code = `// Quem usa passa os valores (props)
 const links = [
@@ -37,7 +38,15 @@ export default function Props() {
       code={code}
     >
       <nav aria-label="Exemplo de navegação com props">
-        <ul style={{ display: "flex", gap: "1rem", listStyle: "none", padding: 0, margin: 0 }}>
+        <ul
+          style={{
+            display: "flex",
+            gap: "1rem",
+            listStyle: "none",
+            padding: 0,
+            margin: 0,
+          }}
+        >
           {demoLinks.map((link) => (
             <NavLink
               key={link.label}
@@ -48,6 +57,12 @@ export default function Props() {
           ))}
         </ul>
       </nav>
+
+      <div className="cards-props">
+        <Card title="Título do Card 1" description="Descrição do Card 1" />
+        <Card title="Título do Card 2" description="Descrição do Card 2" />
+        <Card />
+      </div>
     </StudyBlock>
   );
 }
