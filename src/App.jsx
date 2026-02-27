@@ -4,6 +4,7 @@ import Inicio from "./pages/Inicio";
 import Eventos from "./pages/Eventos";
 import Props from "./pages/Props";
 import Components from "./pages/Components";
+import UseState from "./pages/UseState";
 
 import "./App.css";
 
@@ -16,6 +17,7 @@ export default function App() {
           <Route path="eventos" element={<Eventos />} />
           <Route path="props" element={<Props />} />
           <Route path="components" element={<Components />} />
+          <Route path="estado" element={<UseState />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Route>
       </Routes>
