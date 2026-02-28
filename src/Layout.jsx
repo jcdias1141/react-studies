@@ -7,7 +7,8 @@ const links = [
   { to: "/eventos", label: "Eventos" },
   { to: "/props", label: "Props" },
   { to: "/components", label: "Components" },
-  { to: "/estado", label: "Estado" },
+  { to: "/estado", label: "useState" },
+  { to: "/efeito", label: "useEffect" },
 ];
 
 export default function Layout() {

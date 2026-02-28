@@ -9,7 +9,7 @@ export default function UseState() {
   return (
     <StudyBlock
       title="useState"
-      description="useState guarda um valor que pode mudar. Quando você chama setValor, o React re-renderiza o componente."
+      description="useState é um hook que permite guardar um valor que pode mudar. Quando você chama setValor, o React re-renderiza o componente."
       code={code}
     >
       <Counter />

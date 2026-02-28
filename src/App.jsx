@@ -5,6 +5,7 @@ import Eventos from "./pages/Eventos";
 import Props from "./pages/Props";
 import Components from "./pages/Components";
 import UseState from "./pages/UseState";
+import UseEffect from "./pages/UseEffect";
 
 import "./App.css";
 
@@ -18,6 +19,7 @@ export default function App() {
           <Route path="props" element={<Props />} />
           <Route path="components" element={<Components />} />
           <Route path="estado" element={<UseState />} />
+          <Route path="efeito" element={<UseEffect />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Route>
       </Routes>
