@@ -9,6 +9,7 @@ const links = [
   { to: "/components", label: "Components" },
   { to: "/estado", label: "useState" },
   { to: "/efeito", label: "useEffect" },
+  { to: "/ref", label: "useRef" },
 ];
 
 export default function Layout() {
