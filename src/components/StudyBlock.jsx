@@ -1,10 +1,17 @@
-export function StudyBlock({ title, description, code, children }) {
+export function StudyBlock({ title, description, hint, code, children }) {
   return (
     <main className="conteudo" role="main">
-      {(title || description) && (
+      {(title || description || hint) && (
         <section className="study-intro" aria-labelledby={title ? "study-title" : undefined}>
           {title && <h2 id="study-title">{title}</h2>}
           {description && <p className="study-desc">{description}</p>}
+          {hint && (
+            <div className="study-hint" aria-label="Dica para fixação">
+              {hint.split("\n\n").map((paragraph, i) => (
+                <p key={i}>{paragraph}</p>
+              ))}
+            </div>
+          )}
         </section>
       )}
       {code && (

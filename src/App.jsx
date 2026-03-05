@@ -7,6 +7,7 @@ import Components from "./pages/Components";
 import UseState from "./pages/UseState";
 import UseEffect from "./pages/UseEffect";
 import UseRef from "./pages/UseRef";
+import UseContext from "./pages/context/UseContext";
 
 import "./App.css";
 
@@ -22,6 +23,7 @@ export default function App() {
           <Route path="estado" element={<UseState />} />
           <Route path="efeito" element={<UseEffect />} />
           <Route path="ref" element={<UseRef />} />
+          <Route path="context" element={<UseContext />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Route>
       </Routes>
